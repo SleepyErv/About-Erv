@@ -1,1 +1,1 @@
-First websit project using HTML, CSS, and JS.
+First website project using HTML, CSS, and JS.
