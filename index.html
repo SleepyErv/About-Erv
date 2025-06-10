@@ -1,0 +1,118 @@
+<!--First website, and About Me one.-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SleepyErv</title>
+
+        <!--Linking css file-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Linking js file:-->
+        <script src="script.js"></script>
+        
+        <!--Fonts:-->
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap" rel="stylesheet" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <p class="Ribbon">
+            <button class="ErvFont ervin-btn" id="ervin-name" type="button" style="background:none; border:none; padding:0; margin:0; cursor:pointer;">Erv</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" onclick="openPopup('about')">About Me</a>
+            <a href="#" onclick="openPopup('hobbies')">Hobbies</a>
+            <a href="#" onclick="openPopup('source')">Source Code</a>
+            <a href="https://www.instagram.com/sleepy.erv/" target="_blank">Instagram</a>
+        </p>
+
+        <h1 class="BodyTitle">
+            Hi, my <br>
+            name is <span class="ErvinColor">Ervin</span>. <br>
+            I'm an <br>
+            <span class="ITStudentColor">IT student</span>.
+        </h1>
+
+        <p class="BodyAuthor">
+            - Ervin Lin
+        </p>
+
+        <div id="popup-overlay" class="popup-overlay" style="display:none;"></div>
+
+        <div id="popup-about" class="popup-window" style="display:none;">
+            <div class="popup-header">
+                <span>About Me</span>
+                <button class="popup-close" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p>
+                  Hi, my name is Ervin Lin and as you might have already knew, I am an IT student currently pursing my Associates degree in IT at the University of Belize. <br>
+                  <br> <b>Want to learn more about me?</b> <br>
+                  <br> • I am a vegetarian (I don't eat meat but do eat dairy products.) <br>
+                  • I have a red-green color blindness called Deutan. <br>
+                  • My birthday is on September 16th. <br>
+                  • I am a Taiwanese Belizean. <br>
+                  • I have 3 younger siblings. <br>
+                  • My favorite food is Pizza and Ramen. <br>
+                  • My favorite drink is Iced tea or coffee. <br>
+                  • I love tinkering with tech stuff which is how I made this website! <br>
+                  <br> <b>What are my goals?</b> <br>
+                  <br> • Get better at programming. <br>
+                  • Get better at drawing. <br>
+                  • Get better at 3D modeling (Only thing I did was model and texture a banana). <br>
+                  • Learn graphic designing. <br>
+                  • Learn game development. <br>
+                  <span class="Orange">• Asian baddie pls 🙏.</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="popup-hobbies" class="popup-window" style="display:none;">
+            <div class="popup-header">
+                <span>Hobbies</span>
+                <button class="popup-close" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p>
+                  <b>What hobbies am I into?</b> <br>
+                  <br> • Gaming (Both competetive and casual games!). <br>
+                  • Watch anime. <br>
+                  • Drawing (Though I'm bad at it). <br>
+                  • Programming (Only when I'm motivated). <br>
+                  • Dealing with technology. I am familiar with both Windows and Android environment. <br>
+                  <span class="Orange">• Piracy ("It's morally right blah blah blah..." Nah, I just enjoy stealing).</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="popup-source" class="popup-window" style="display:none;">
+            <div class="popup-header">
+                <span>Source Code</span>
+                <button class="popup-close" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <p>
+                  <b>What did I use for this project?</b> <br>
+                  <br> <span class="Orange">• VSCode</span> <br>
+                  • HTML <br>
+                  • CSS <br>
+                  • JS <br>
+                  <br> <b>Github repository for the source code of this website:</b>
+                </p>
+            </div>
+        </div>
+        
+        <!--Music player button and audio element:-->
+
+        <button id="music-btn" class="music-btn" aria-label="Play/Pause music">⏵</button>
+        <audio id="music-audio" src="audio/SaturdayTheme3008.mp3" loop></audio>
+
+        <!--Audo when hover:-->
+        <audio id="hover-sound" src="audio/Hover.mp3" preload="auto"></audio>
+
+        <!-- <div style="height: 1000px;"></div> -->
+    </body>
+</html>
